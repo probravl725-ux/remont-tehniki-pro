@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deka.kz - Ремонт техники</title>
+    <title>DEKAservice — Ремонт техники</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,266 +11,92 @@
     <!-- Шапка сайта -->
     <header class="header">
         <div class="logo-container">
-            <span class="logo-badge">DK</span>
-            <span class="logo-text"><strong>Deka.kz</strong> <small>ремонт техники</small></span>
+            <div class="logo-badge">DK</div>
+            <div class="logo-text">
+                <strong>DEKAservice</strong>
+                <span>ремонт техники</span>
+            </div>
         </div>
-        <!-- Кнопка оставить заявку ведет в WhatsApp -->
-        <a href="https://wa.me/+7 747 022 20 18?text=Здравствуйте! Хочу оставить заявку на ремонт техники." class="btn-primary-small" target="_blank">Оставить заявку ↗</a>
+        <!-- Кнопка оставить заявку ведет на WhatsApp -->
+        <a href="https://wa.me/+7 747 022 20 18" target="_blank" class="btn-green">Оставить заявку ↗</a>
     </header>
 
-    <!-- Главный экран (Hero) -->
+    <!-- Главный экран -->
     <section class="hero">
         <span class="sub-title">— техника снова работает</span>
-        <h1>Ремонт техники <br><span>в Казахстане</span></h1>
+        <h1>Ремонт техники<br>в <span>Астане</span></h1>
         <p>Помогаем вернуть к работе пылесосы и бытовую технику. Принимаем обращения от частных клиентов и бизнеса.</p>
-
+        
         <div class="hero-buttons">
-            <!-- Кнопка Обсудить ремонт веет в Instagram -->
-            <a href="https://instagram.com/dekaservice1" class="btn-green" target="_blank">Обсудить ремонт ↗</a>
-            
-            <!-- Кнопка Посмотреть услуги прокручивает вниз -->
+            <!-- Кнопка обсудить ремонт ведет в Instagram -->
+            <a href="https://instagram.com/dekaservice1" target="_blank" class="btn-primary-small">Обсудить ремонт ↗</a>
+            <!-- Кнопка посмотреть услуги плавно прокручивает страницу вниз -->
             <a href="#services" class="btn-outline">Посмотреть услуги ↓</a>
         </div>
     </section>
 
     <!-- Блок услуг -->
-    <section id="services" class="services">
+    <section class="services" id="services">
         <span class="sub-title">— чем можем помочь</span>
-        <h2>Сервис для техники, которой вы пользуетесь</h2>
+        <h2>Сервис для техники,<br>которой вы пользуетесь</h2>
         <p class="section-desc">Расскажите, что случилось с техникой. Специалисты подскажут следующий шаг и сориентируют по ремонту.</p>
 
         <div class="service-cards">
-            <!-- Услуга 3 (где меняли текст) -->
+            <div class="card">
+                <span class="card-num">01 / СТИРАЛЬНАЯ И СУШИЛЬНАЯ ТЕХНИКА</span>
+                <h3>Стирка и сушка</h3>
+                <p>• Стиральные машины<br>• Сушильные машины<br>• Посудомоечные машины</p>
+            </div>
+
+            <div class="card">
+                <span class="card-num">02 / ХОЛОД И КЛИМАТ</span>
+                <h3>Холодильная техника и кондиционеры</h3>
+                <p>• Холодильники<br>• Морозильники<br>• Ледогенераторы<br>• Кондиционеры</p>
+            </div>
+
+            <!-- Обновленный блок: Техника для дома и HoReCa -->
             <div class="card">
                 <span class="card-num">03 / МЕЛКОБЫТОВАЯ ТЕХНИКА</span>
                 <h3>Техника для дома и HoReCa</h3>
-                <ul>
-                    <li>Вертикальные пылесосы</li>
-                    <li>Роботы-пылесосы</li>
-                    <li>Обычные пылесосы</li>
-                    <li>Строительные пылесосы</li>
-                    <li>Микроволновки</li>
-                    <li>Мясорубки</li>
-                    <li>Кофемашины</li>
-                </ul>
+                <p>• Вертикальные пылесосы<br>• Роботы-пылесосы<br>• Обычные пылесосы<br>• Строительные пылесосы<br>• Микроволновки<br>• Мясорубки<br>• Кофемашины</p>
+            </div>
+
+            <div class="card">
+                <span class="card-num">04 / ТЕХНИКА ДЛЯ КУХНИ</span>
+                <h3>Духовки и плиты</h3>
+                <p>• Духовые шкафы<br>• Плиты<br>• Варочные панели</p>
             </div>
         </div>
     </section>
 
-</body>
-</html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        .service-card:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 6px 15px rgba(0,0,0,0.08);
-        }
-
-        .service-card h3 {
-            font-size: 16px;
-            margin-bottom: 8px;
-            color: var(--olx-green);
-        }
-
-        .service-card p {
-            font-size: 14px;
-            color: var(--text-muted);
-        }
-
-        /* Блок формы заявки */
-        .form-section {
-            background: var(--white);
-            border: 1px solid var(--border-color);
-            border-radius: 12px;
-            max-width: 600px;
-            margin: 0 auto;
-            padding: 30px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
-        }
-
-        .form-section h2 {
-            font-size: 22px;
-            margin-bottom: 8px;
-            text-align: center;
-            color: var(--olx-green);
-        }
-
-        .form-section p {
-            text-align: center;
-            color: var(--text-muted);
-            font-size: 14px;
-            margin-bottom: 25px;
-        }
-
-        .form-group {
-            margin-bottom: 20px;
-        }
-
-        .form-group label {
-            display: block;
-            font-size: 14px;
-            font-weight: 600;
-            margin-bottom: 8px;
-            color: var(--olx-green);
-        }
-
-        .form-group input, 
-        .form-group textarea {
-            width: 100%;
-            padding: 12px 15px;
-            border: 1px solid var(--border-color);
-            border-radius: 6px;
-            font-size: 15px;
-            outline: none;
-            transition: border-color 0.2s;
-        }
-
-        .form-group input:focus, 
-        .form-group textarea:focus {
-            border-color: var(--olx-green);
-        }
-
-        .form-group textarea {
-            resize: vertical;
-            height: 100px;
-        }
-
-        .btn-submit {
-            background-color: var(--olx-accent);
-            color: var(--olx-green);
-            border: none;
-            width: 100%;
-            padding: 14px;
-            font-size: 16px;
-            font-weight: 700;
-            border-radius: 6px;
-            cursor: pointer;
-            transition: background-color 0.2s;
-        }
-
-        .btn-submit:hover {
-            background-color: var(--olx-accent-hover);
-        }
-
-        /* Футер */
-        footer {
-            background-color: var(--olx-green);
-            color: #8fa4a6;
-            text-align: center;
-            padding: 30px 20px;
-            margin-top: 60px;
-            font-size: 14px;
-        }
-
-        @media (max-width: 600px) {
-            .hero h1 { font-size: 26px; }
-            .header-contacts { display: none; }
-        }
-    </style>
-</head>
-<body>
-
-    <!-- Шапка -->
-    <header>
-        <div class="header-container">
-            <a href="#" class="logo">РЕМОНТ <span>ПРО</span></a>
-            <div class="header-contacts">
-                <a href="tel:+77000000000" class="phone">+7 (700) 000-00-00</a>
-                <div class="phone-sub">Ежедневно с 9:00 до 21:00</div>
+    <!-- Форма заявки -->
+    <section class="form-section" id="contact">
+        <h2>Оставить заявку на ремонт</h2>
+        <p>Заполните форму, и мы свяжемся с вами в течение 5 минут</p>
+        
+        <form>
+            <div class="form-group">
+                <label>Ваше имя</label>
+                <input type="text" placeholder="Введите ваше имя">
             </div>
-        </div>
-    </header>
-
-    <!-- Главный экран -->
-    <section class="hero">
-        <div class="hero-container">
-            <h1>Профессиональный ремонт бытовой техники на дому</h1>
-            <p>Диагностика, честные цены и гарантия на все виды работ. Выезд мастера в день обращения.</p>
-        </div>
+            <div class="form-group">
+                <label>Номер телефона</label>
+                <input type="text" placeholder="+7 (___) __-__-__">
+            </div>
+            <div class="form-group">
+                <label>Описание поломки</label>
+                <textarea placeholder="Например: Стиральная машина не отжимает белье..."></textarea>
+            </div>
+            <button type="submit" class="btn-submit">Вызвать мастера</button>
+        </form>
     </section>
 
-    <!-- Основной контейнер -->
-    <div class="container">
-        
-        <h2 class="section-title">Что мы ремонтируем</h2>
-        
-        <!-- Сетка услуг -->
-        <div class="services-grid">
-            <div class="service-card">
-                <h3>Стиральные машины</h3>
-                <p>Замена ТЭНов, ремонт плат, устранение протечек и шума.</p>
-            </div>
-            <div class="service-card">
-                <h3>Холодильники</h3>
-                <p>Заправка фреоном, ремонт компрессоров, замена термостатов.</p>
-            </div>
-            <div class="service-card">
-                <h3>Микроволновки</h3>
-                <p>Ремонт магнетронов, замена слюды, ремонт панели управления.</p>
-            </div>
-            <div class="service-card">
-                <h3>Посудомоечные машины</h3>
-                <p>Чистка фильтров, устранение ошибок, замена насосов.</p>
-            </div>
-        </div>
-
-        <!-- Форма заявки (подключена к твоему Formspree ID: xoeepgqo) -->
-        <div class="form-section">
-            <h2>Оставить заявку на ремонт</h2>
-            <p>Заполните форму, и мы свяжемся с вами в течение 5 минут</p>
-            
-            <form action="https://formspree.io/f/xoeepgqo" method="POST">
-                <div class="form-group">
-                    <label for="name">Ваше имя</label>
-                    <input type="text" id="name" name="name" required placeholder="Введите ваше имя">
-                </div>
-                
-                <div class="form-group">
-                    <label for="phone">Номер телефона</label>
-                    <input type="tel" id="phone" name="phone" required placeholder="+7 (___) ___-__-__">
-                </div>
-                
-                <div class="form-group">
-                    <label for="message">Описание поломки</label>
-                    <textarea id="message" name="message" placeholder="Например: Стиральная машина не отжимает белье..."></textarea
-
-                </div>
-                
-                <button type="submit" class="btn-submit">Вызвать мастера</button>
-            </form>
-        </div>
-
-    </div>
-
-    <!-- Футер -->
     <footer>
-        <p>&copy; 2026 Ремонт бытовой техники. Все права защищены.</p>
+        © 2026 DEKAservice. Все права защищены.
     </footer>
 
 </body>
 </html>
-
-
-
 
 
 
