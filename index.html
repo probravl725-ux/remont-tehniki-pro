@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ремонт бытовой техники</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: sans-serif; }
+        body { background: #f8f9fa; color: #333; }
+        header { background: linear-gradient(135deg, #0d6efd, #0b5ed7); color: white; text-align: center; padding: 40px 20px; }
+        header h1 { font-size: 26px; margin-bottom: 10px; }
+        header p { opacity: 0.9; margin-bottom: 20px; }
+        .btn-call { display: inline-block; background: #25d366; color: white; padding: 14px 28px; text-decoration: none; font-weight: bold; border-radius: 30px; box-shadow: 0 4px 10px rgba(0,0,0,0.15); }
+        .container { max-width: 600px; margin: auto; padding: 20px; }
+        .section-title { font-size: 20px; margin: 20px 0 15px; border-left: 4px solid #0d6efd; padding-left: 10px; }
+        .card { background: white; padding: 16px; border-radius: 12px; margin-bottom: 12px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
+        .price { font-weight: bold; color: #0d6efd; }
+        .features { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+        .feature-box { background: white; padding: 15px; border-radius: 12px; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
+        .feature-box div { font-size: 24px; margin-bottom: 5px; }
+        form { background: white; padding: 20px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); margin-top: 15px; }
+        label { display: block; font-weight: bold; margin-bottom: 6px; font-size: 14px; }
+        input, select { width: 100%; padding: 12px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 8px; font-size: 15px; }
+        .btn-submit { width: 100%; background: #0d6efd; color: white; border: none; padding: 14px; border-radius: 8px; font-weight: bold; font-size: 16px; cursor: pointer; }
+        footer { text-align: center; padding: 20px; color: #777; font-size: 13px; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Срочный ремонт бытовой техники</h1>
+    <p>Стиральные машины, холодильники, плиты</p>
+    <a href="tel:+77000000000" class="btn-call">📞 Позвонить мастеру</a>
+</header>
+
+<div class="container">
+    <div class="features">
+        <div class="feature-box"><div>🚀</div><b>Приезд за 30 минут</b></div>
+        <div class="feature-box"><div>🛡️</div><b>Гарантия до 1 года</b></div>
+    </div>
+
+    <h2 class="section-title">Цены на услуги</h2>
+    <div class="card"><span>Диагностика</span><span class="price">Бесплатно</span></div>
+    <div class="card"><span>Замена насоса / помпы</span><span class="price">от 4 000 ₸</span></div>
+    <div class="card"><span>Замена ТЭНа</span><span class="price">от 5 000 ₸</span></div>
+    <div class="card"><span>Заправка фреоном</span><span class="price">от 7 000 ₸</span></div>
+
+    <h2 class="section-title" id="order">Вызвать мастера</h2>
+    <form action="https://formspree.io/f/xoeepgqo" method="POST">
+        <label>Ваше имя</label>
+        <input type="text" name="name" placeholder="Ерлан" required>
+        
+        <label>Ваш телефон</label>
+        <input type="tel" name="phone" placeholder="+7 (777) 000-00-00" required>
+        
+        <label>Что сломалось?</label>
+        <select name="issue">
+            <option value="Стиральная машина">Стиральная машина</option>
+            <option value="Холодильник">Холодильник</option>
+            <option value="Другое">Другое</option>
+        </select>
+        
+        <button type="submit" class="btn-submit">Отправить заявку</button>
+    </form>
+</div>
+
+<footer>
+    <p>&copy; 2026 Сервис ремонта бытовой техники</p>
+</footer>
+
+</body>
+</html>
