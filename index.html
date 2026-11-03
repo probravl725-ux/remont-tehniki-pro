@@ -3,138 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ремонт бытовой техники в вашем городе | Быстро и с гарантией</title>
-    <style>
-        :root {
-            --olx-green: #002f34;
-            --olx-accent: #23e5db;
-            --olx-accent-hover: #1ac7bc;
-            --bg-light: #f4f6f8;
-            --text-main: #002f34;
-            --text-muted: #7f9799;
-            --white: #ffffff;
-            --border-color: #c4d1d2;
-        }
+    <title>Deka.kz - Ремонт техники</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-        }
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="logo-container">
+            <span class="logo-badge">DK</span>
+            <span class="logo-text"><strong>Deka.kz</strong> <small>ремонт техники</small></span>
+        </div>
+        <!-- Кнопка оставить заявку ведет в WhatsApp -->
+        <a href="https://wa.me/+7 747 022 20 18?text=Здравствуйте! Хочу оставить заявку на ремонт техники." class="btn-primary-small" target="_blank">Оставить заявку ↗</a>
+    </header>
 
-        body {
-            background-color: var(--bg-light);
-            color: var(--text-main);
-            line-height: 1.5;
-        }
+    <!-- Главный экран (Hero) -->
+    <section class="hero">
+        <span class="sub-title">— техника снова работает</span>
+        <h1>Ремонт техники <br><span>в Казахстане</span></h1>
+        <p>Помогаем вернуть к работе пылесосы и бытовую технику. Принимаем обращения от частных клиентов и бизнеса.</p>
 
-        /* Шапка */
-        header {
-            background-color: var(--white);
-            border-bottom: 1px solid var(--border-color);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
+        <div class="hero-buttons">
+            <!-- Кнопка Обсудить ремонт веет в Instagram -->
+            <a href="https://instagram.com/dekaservice1" class="btn-green" target="_blank">Обсудить ремонт ↗</a>
+            
+            <!-- Кнопка Посмотреть услуги прокручивает вниз -->
+            <a href="#services" class="btn-outline">Посмотреть услуги ↓</a>
+        </div>
+    </section>
 
-        .header-container {
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 15px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+    <!-- Блок услуг -->
+    <section id="services" class="services">
+        <span class="sub-title">— чем можем помочь</span>
+        <h2>Сервис для техники, которой вы пользуетесь</h2>
+        <p class="section-desc">Расскажите, что случилось с техникой. Специалисты подскажут следующий шаг и сориентируют по ремонту.</p>
 
-        .logo {
-            font-size: 22px;
-            font-weight: 800;
-            color: var(--olx-green);
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
+        <div class="service-cards">
+            <!-- Услуга 3 (где меняли текст) -->
+            <div class="card">
+                <span class="card-num">03 / МЕЛКОБЫТОВАЯ ТЕХНИКА</span>
+                <h3>Техника для дома и HoReCa</h3>
+                <ul>
+                    <li>Вертикальные пылесосы</li>
+                    <li>Роботы-пылесосы</li>
+                    <li>Обычные пылесосы</li>
+                    <li>Строительные пылесосы</li>
+                    <li>Микроволновки</li>
+                    <li>Мясорубки</li>
+                    <li>Кофемашины</li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
-        .logo span {
-            background-color: var(--olx-accent);
-            color: var(--olx-green);
-            padding: 2px 8px;
-            border-radius: 4px;
-        }
+</body>
+</html>
 
-        .header-contacts {
-            text-align: right;
-        }
 
-        .phone {
-            font-size: 18px;
-            font-weight: 700;
-            color: var(--olx-green);
-            text-decoration: none;
-        }
 
-        .phone-sub {
-            font-size: 12px;
-            color: var(--text-muted);
-        }
 
-        /* Главный экран */
-        .hero {
-            background-color: var(--olx-green);
-            color: var(--white);
-            padding: 50px 20px;
-            text-align: center;
-        }
 
-        .hero-container {
-            max-width: 800px;
-            margin: 0 auto;
-        }
 
-        .hero h1 {
-            font-size: 32px;
-            margin-bottom: 15px;
-            font-weight: 800;
-        }
 
-        .hero p {
-            font-size: 18px;
-            color: #d0dbe1;
-            margin-bottom: 30px;
-        }
 
-        /* Услуги / Карточки */
-        .container {
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
 
-        .section-title {
-            font-size: 24px;
-            font-weight: 700;
-            margin-bottom: 25px;
-            text-align: center;
-            color: var(--olx-green);
-        }
 
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 20px;
-            margin-bottom: 50px;
-        }
 
-        .service-card {
-            background: var(--white);
-            border: 1px solid var(--border-color);
-            border-radius: 8px;
-            padding: 20px;
-            text-align: center;
-            transition: transform 0.2s, box-shadow 0.2s;
-        }
+
+
+
+
+
+
+
+
+
 
         .service-card:hover {
             transform: translateY(-3px);
@@ -307,7 +251,8 @@
                 
                 <div class="form-group">
                     <label for="message">Описание поломки</label>
-                    <textarea id="message" name="message" placeholder="Например: Стиральная машина не отжимает белье..."></textarea>
+                    <textarea id="message" name="message" placeholder="Например: Стиральная машина не отжимает белье..."></textarea
+
                 </div>
                 
                 <button type="submit" class="btn-submit">Вызвать мастера</button>
